@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0.css" />
+		<link rel="stylesheet" type="text/css"  href="css/GeoCode.css">
+		<script src="cordova-2.3.0.js"></script>
+		<script src="jquery.js"></script>
+		<script src="jquery.mobile-1.2.0.js"></script>
+		<script src="js/utilities.js"></script>
+		<script src="index01.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script src="js/Phi.js"> </script>
+		<script src="js/utilities.js"> </script>
+		<script src="js/Display.js"> </script>
+		<script src="js/Locations.js"> </script>
+		<script src="js/PhiLocationsEasy01.js"> </script>
+		<title>Hello World</title>
+	</head>
+	<body>
+
+		<div data-role="page" id="page1" data-theme="b">
+
+			<div data-role="header">
+				<h1>Page One</h1>
+			</div>
+
+			<!-- /header -->
+
+			<div data-role="content">
+
+				<div class="app">
+					<h1>ec2 I/O Program</h1>
+					<div id="deviceready" class="blink">
+						<p class="event listening">
+							Connecting to Device
+						</p>
+						<p class="event received">
+							Device is Ready
+						</p>
+						<p id="curDate"></p>
+
+				</div>
+				
+				<input id="address" type="text" value="Bellevue, WA">
+				<input id="getDirections" type="button" value="Get Directions">
+				<ul id='debugList'></ul>
+				<a href="#page2" data-role="button" data-icon="star">Go to Page Two</a>
+			</div>
+		</div>
+
+		</div>
+		<div>
+							
+						</div>
+		<!-- /content -->
+
+		</div>
+
+		<!-- /page -->
+
+		<div data-role="page" id="page2" data-theme="b">
+
+			<div data-role="header">
+				<h1>Page Two</h1>
+			</div><!-- /header -->
+
+			<div data-role="content">
+				<p>
+
+				</p>
+				<div class="addForm">
+		<span class="rowName">city Name:</span> <input id="city" name="city" type="text">
+	</div>
+	<div class="addForm">
+		<span class="rowName">state Name:</span> <input id="state" name="state" type="text">
+	</div>
+
+	<div>		
+		<button id="getLocations">Get Locations</button>
+		<button id="saveLocations">Save Locations</button>				
+	</div>
+		
+	<div>
+	    <button id="insertLocation">Insert Location</button>
+	    <button id="deleteitem">Delete Location</button>				
+	</div>
+				<p id="position"> </p>
+				
+				<div id="mainDiv">
+					<div id="mapCanvas">  </div>
+					<div id="directions"></div>
+				</div>
+
+				
+				<a href="#page1" data-role="button" data-icon="star">Back to Page One</a>
+			</div><!-- /content -->
+
+		</div><!-- /page -->
+
+	</body>
+</html>
