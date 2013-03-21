@@ -9,7 +9,7 @@ set User=%ELF_USER%
 set SshUser=%User%@%ELF_IP%
 set Home=/home/%User%
 set CreateBin=CreateBin.sh
-set SetupGitScript=SetupGitForFinal.sh
+set SetupGitScript=SetupLinuxBox/SetupGitForFinal.sh
 set SetupSshScript=SetupSsh.sh
 set SetupNodeScript=SetupNode.sh
 
