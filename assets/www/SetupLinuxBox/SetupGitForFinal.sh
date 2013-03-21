@@ -1,6 +1,6 @@
 GIT_DIR=~/Git
-JSOBJECTS_DIR=JsObjects
-FINALRAY_DIR=~/FinalRay
+FINALMAPPING_DIR=FinalMapping
+FINALRAY_DIR=~/assets/www
 
 if [ ! -d "$GIT_DIR" ]; then
 	mkdir $GIT_DIR
@@ -13,9 +13,9 @@ if [ ! -d "$JSOBJECTS_DIR" ]; then
 fi
 
 if [ ! -L "$FINALRAY_DIR" ]; then
-	ln -s ~/Git/JsObjects/FinalRay/ $FINALRAY_DIR
+	ln -s ~/Git/FinalMapping/FinalRay/ $FINALRAY_DIR
 fi
 
-cd $PRESIDENT_DIR
+cd $FINALRAY_DIR
 npm install
 nodejs server.js
